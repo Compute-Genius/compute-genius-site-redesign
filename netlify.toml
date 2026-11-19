@@ -11,3 +11,34 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Old site URLs (previous Solo / Cloudflare Pages site)
+[[redirects]]
+  from = "/about-us"
+  to = "/about"
+  status = 301
+
+[[redirects]]
+  from = "/about-us.html"
+  to = "/about"
+  status = 301
+
+[[redirects]]
+  from = "/contact-us"
+  to = "/contact"
+  status = 301
+
+[[redirects]]
+  from = "/contact-us.html"
+  to = "/contact"
+  status = 301
+
+[[redirects]]
+  from = "/subscriptions"
+  to = "/#plans"
+  status = 301
+
+[[redirects]]
+  from = "/subscriptions.html"
+  to = "/#plans"
+  status = 301
