@@ -25,7 +25,6 @@
     <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="links"><i></i><i></i></button>
     <nav class="links" id="links" aria-label="Main">
       <a class="l" href="/#services">Services</a>
-      <a class="l" href="/#ai">AI</a>
       <a class="l" href="/#plans">Plans</a>
       <a class="l" href="/about.html">About</a>
       <a class="l" href="/contact.html" aria-current="page">Contact</a>
@@ -59,7 +58,7 @@
       <div class="panel">
         <h2>Or send a note</h2>
         <p>Tell us a little about your setup and we'll reply.</p>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
+        <form id="contact-form" style="scroll-margin-top:96px" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
           <input type="hidden" name="form-name" value="contact">
           <p hidden><label>Don't fill this out: <input name="bot-field"></label></p>
           <div class="f2">
@@ -70,9 +69,6 @@
           <div class="field"><label for="m">How can we help?</label><textarea id="m" name="message"></textarea></div>
           <button class="btn btn-primary" type="submit" style="width:100%">Send message <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
         </form>
-        <dl class="details">
-          <div><dt>Email</dt><dd><a href="mailto:info@computegenius.com">info@computegenius.com</a></dd></div>
-        </dl>
       </div>
     </div>
   </div>
@@ -89,7 +85,6 @@
         <h4>Explore</h4>
         <ul>
           <li><a href="/#services">Services</a></li>
-          <li><a href="/#ai">AI</a></li>
           <li><a href="/#plans">Plans</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/contact.html">Contact</a></li>
@@ -99,7 +94,7 @@
         <h4>Talk to us</h4>
         <ul>
           <li><a href="/contact.html">Book a session</a></li>
-          <li><a href="mailto:info@computegenius.com">info@computegenius.com</a></li>
+          <li><a href="/contact.html#contact-form">Send a message</a></li>
         </ul>
       </div>
     </div>
