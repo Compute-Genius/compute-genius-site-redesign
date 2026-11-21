@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/assets/fonts/Geist-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/style.css?v=v7">
+<link rel="stylesheet" href="/assets/style.css?v=v9">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -66,7 +66,12 @@
             <div class="field"><label for="e">Email</label><input id="e" type="email" name="email" autocomplete="email" required></div>
           </div>
           <div class="field"><label for="c">Company</label><input id="c" name="company" autocomplete="organization"></div>
-          <div class="field"><label for="m">How can we help?</label><textarea id="m" name="message"></textarea></div>
+          <div class="field">
+            <label for="m">How can we help?</label>
+            <p class="form-note" id="message-guidance">This form is for general inquiries, not technical support. Please don’t include passwords, patient information, or other sensitive data.</p>
+            <textarea id="m" name="message" aria-describedby="message-guidance"></textarea>
+          </div>
+          <p class="form-note form-privacy">See our <a href="/privacy">Privacy Policy</a> for how we handle your information.</p>
           <button class="btn btn-primary" type="submit" style="width:100%">Send message <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
         </form>
       </div>
@@ -98,7 +103,7 @@
         </ul>
       </div>
     </div>
-    <div class="legal"><span>© 2026 Compute Genius</span></div>
+    <div class="legal"><span>© 2026 Compute Genius</span><a href="/privacy">Privacy Policy</a></div>
   </div>
 </footer>
 <script src="/assets/main.js?v=v6" defer></script>
